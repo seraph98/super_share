@@ -20,6 +20,8 @@ def main():
     ls.extend(get_html_and_parse(fxds_url, fxds))
     xlfans_url = 'http://xlfans.com/archives'
     ls.extend(get_html_and_parse(xlfans_url, xlfans))
+    for l in ls:
+        print(l)
     return ls
 
 

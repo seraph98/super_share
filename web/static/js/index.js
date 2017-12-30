@@ -12,12 +12,18 @@ function choose(ele) {
         switch(id){
             case '0':
                 title.innerHTML = '百度网盘搜索';
+                document.getElementById('input_id').setAttribute('class', 'search_input');
+                document.getElementById('so_div_id').setAttribute('class', 'so_div');
                 break;
             case '1':
                 title.innerHTML = '迅雷vip搜索';
+                document.getElementById('input_id').setAttribute('class', 'no-power');
+                document.getElementById('so_div_id').setAttribute('class', 'no_power_so_div');
                 break;
             case '2':
                 title.innerHTML = '优酷vip搜索';
+                document.getElementById('input_id').setAttribute('class', 'no-power');
+                document.getElementById('so_div_id').setAttribute('class', 'no_power_so_div');
                 break;
             default:
                 break
@@ -27,7 +33,26 @@ function choose(ele) {
     }
 }
 
+
 function forsearch(ele) {
+    let id = ele.getAttribute('name');
+    switch (id){
+        case '0':
+            search_baidu_cloud();
+            break;
+        case '1':
+            search_xunlei_vip();
+            break;
+        case '2':
+            search_youku_vip();
+            break;
+        default:
+            break;
+    }
+}
+
+
+function search_baidu_cloud() {
     begin_power();
     let query = document.getElementById('input_id').value;
     let url = 'http://localhost:5000/baidu_cloud?query='+query;
@@ -37,6 +62,7 @@ function forsearch(ele) {
             //todo 处理返回值
             let pele = document.getElementById('power_id');
             pele.setAttribute('class', 'no-power');
+            self_time = 40;
             document.getElementById('abc').innerHTML = '<span class="span_div">查询中</span><span class="span_div spe" id="sec_id"> 40 </span><span class="span_div">秒</span>';
             let result = xmlhttp.responseText;
             let json = JSON.parse(result);
@@ -78,6 +104,77 @@ function forsearch(ele) {
     xmlhttp.send();
 }
 
+function search_xunlei_vip() {
+    self_time = 30;
+    begin_power();
+    let url = 'http://localhost:5000/xunlei_vip';
+    let xmlhttp = new XMLHttpRequest();
+    xmlhttp.onreadystatechange=function() {
+        if (xmlhttp.readyState===4 && xmlhttp.status===200) {
+            //todo 处理返回值
+            self_time = 40;
+            let pele = document.getElementById('power_id');
+            pele.setAttribute('class', 'no-power');
+            document.getElementById('abc').innerHTML = '<span class="span_div">查询中</span><span class="span_div spe" id="sec_id"> 40 </span><span class="span_div">秒</span>';
+            let result = xmlhttp.responseText;
+            let json = JSON.parse(result);
+            let ap = json.ap;
+            let res_ele = document.getElementById('result_div_id');
+            for(let i in ap){
+                let new_node = document.createElement("div");
+                new_node.setAttribute('class', 'one_res');
+                let account = document.createElement('span');
+                account.setAttribute('class', 'account');
+                account.innerHTML = '账号:'+ap[i][0];
+                new_node.appendChild(account);
+                let password = document.createElement('span');
+                password.setAttribute('class', 'password');
+                password.innerHTML = '密码:'+ap[i][1];
+                new_node.appendChild(password);
+                res_ele.appendChild(new_node)
+            }
+        }
+    };
+    xmlhttp.open('POST', url, true);
+    xmlhttp.setRequestHeader("context-type","text/xml;charset=utf-8");
+    xmlhttp.send();
+}
+
+function search_youku_vip() {
+    self_time = 30;
+    begin_power();
+    let url = 'http://localhost:5000/youku_vip';
+    let xmlhttp = new XMLHttpRequest();
+    xmlhttp.onreadystatechange=function() {
+        if (xmlhttp.readyState===4 && xmlhttp.status===200) {
+            //todo 处理返回值
+            self_time = 40;
+            let pele = document.getElementById('power_id');
+            pele.setAttribute('class', 'no-power');
+            document.getElementById('abc').innerHTML = '<span class="span_div">查询中</span><span class="span_div spe" id="sec_id"> 40 </span><span class="span_div">秒</span>';
+            let result = xmlhttp.responseText;
+            let json = JSON.parse(result);
+            let ap = json.ap;
+            let res_ele = document.getElementById('result_div_id');
+            for(let i in ap){
+                let new_node = document.createElement("div");
+                new_node.setAttribute('class', 'one_res');
+                let account = document.createElement('span');
+                account.setAttribute('class', 'account');
+                account.innerHTML = '账号:'+ap[i][0];
+                new_node.appendChild(account);
+                let password = document.createElement('span');
+                password.setAttribute('class', 'password');
+                password.innerHTML = '密码:'+ap[i][1];
+                new_node.appendChild(password);
+                res_ele.appendChild(new_node)
+            }
+        }
+    };
+    xmlhttp.open('POST', url, true);
+    xmlhttp.setRequestHeader("context-type","text/xml;charset=utf-8");
+    xmlhttp.send();
+}
 
 function begin_power() {
     let power = document.getElementById('power_id');

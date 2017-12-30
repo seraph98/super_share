@@ -41,8 +41,6 @@
 }
 
 .search_input {
-    /*width: 436px;*/
-    /*height: 32px;*/
     width: 420px;
     height: 22px;
     vertical-align: top;
@@ -59,6 +57,12 @@
     display: inline;
     float: left;
     margin-left: 10px;
+}
+
+.no_power_so_div {
+    display: inline;
+    float: left;
+    margin-left: 16%;
 }
 
 .so_div_button {
@@ -135,5 +139,13 @@
     color: red;
 }
 
+.account {
+    font-size: 18px;
+    margin-left: 25%;
+}
 
-
+.password {
+    font-size: 18px;
+    position: absolute;
+    left: 60%;
+}

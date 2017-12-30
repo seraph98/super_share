@@ -26,11 +26,18 @@ def baidu_cloud():
 @app.route('/xunlei_vip', methods=['GET', 'POST'])
 def xunlei_vip():
     ls = xun_lei_main.main()
-
+    obj = {
+        'ap': ls
+    }
+    return json.dumps(obj)
 
 @app.route('/youku_vip', methods=['GET', 'POST'])
 def youku_vip():
     ls = youku_main.main()
+    obj = {
+        'ap': ls
+    }
+    return json.dumps(obj)
 
 
 @app.route('/test', methods=['GET', 'POST'])
