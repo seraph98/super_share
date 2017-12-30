@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link type="text/css" href="../static/css/index.css" rel="stylesheet">
+    <title>super_share</title>
+</head>
+<body style="margin: 0">
+    <div class="top_black">
+        <div class="top_text_choose" id="0" onclick="choose(this)">
+            <span>百度网盘</span>
+        </div>
+        <div class="top_text" id="1" onclick="choose(this)">
+            <span>迅雷vip</span>
+        </div>
+        <div class="top_text" id="2" onclick="choose(this)">
+            <span>优酷vip</span>
+        </div>
+    </div>
+
+    <div class="main_title">
+        <span class="main_title_span" id="main_title_id">百度网盘搜索</span>
+    </div>
+    <div class="main_search_div">
+        <div class="search_div">
+            <input type="text" class="search_input" id="input_id">
+        </div>
+        <div class="so_div">
+            <button class="so_div_button" name="0" id="search_id" onclick="forsearch(this)">搜索</button>
+        </div>
+    </div>
+    <div class="result_div" id="result_div_id">
+    </div>
+    <script src="../static/js/index.js"></script>
+    <div class="no-power" id="power_id">
+        <div class="show">
+            <div class="show-div" id="abc">
+                <span class="span_div">查询中</span><span class="span_div spe" id="sec_id"> 40 </span><span class="span_div">秒</span>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

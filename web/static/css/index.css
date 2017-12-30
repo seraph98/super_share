@@ -1,0 +1,139 @@
+.top_black {
+    height:30px;
+    background-color: black;
+}
+
+.top_text {
+    cursor: pointer;
+    margin-left: 10px;
+    color: #dcdcdc;
+    display: inline;
+    float: left;
+    margin-top: 2px;
+}
+
+.top_text_choose {
+    cursor: pointer;
+    margin-left: 10px;
+    color: #ffffff;
+    display: inline;
+    float: left;
+    border-top: solid 2px red;
+}
+
+.main_title {
+    margin-left: 45%;
+    margin-top: 100px;
+}
+
+.main_title_span {
+    font-size: 20px;
+}
+
+.main_search_div {
+    margin-top: 20px;
+    margin-left: 35%;
+}
+
+.search_div {
+    display: inline;
+    float: left;
+}
+
+.search_input {
+    /*width: 436px;*/
+    /*height: 32px;*/
+    width: 420px;
+    height: 22px;
+    vertical-align: top;
+    padding: 4px 7px;
+    font: 16px arial;
+    background: url(k.png) -304px 0px no-repeat;
+    border-width: 1px;
+    border-style: solid;
+    border-image: initial;
+    border-color: rgb(154, 154, 154) rgb(205, 205, 205) rgb(205, 205, 205) rgb(154, 154, 154);
+}
+
+.so_div {
+    display: inline;
+    float: left;
+    margin-left: 10px;
+}
+
+.so_div_button {
+    width: 95px;
+    height: 32px;
+    cursor: pointer;
+    padding: 0px;
+    border-width: 0px;
+    border-style: initial;
+    border-color: initial;
+    border-image: initial;
+    background: url(k.png) no-repeat rgb(221, 221, 221);
+}
+
+.result_div {
+    margin-top: 150px;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+.one_res {
+    border-bottom: 1px solid #909090;
+    margin-top: 20px;
+}
+
+.baidu_cloud_link {
+    font-size: 20px;
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+.baidu_cloud_href {
+    float: right;
+    font-size: 20px;
+    text-decoration: none;
+    margin-right: 20px;
+}
+
+.power {
+    z-index: 1;
+    position: absolute;
+    width: 100%;
+    height:100%;
+    top: 0;
+    opacity: 0.3;
+    background-color: gray;
+}
+
+.no-power {
+    display: none;
+}
+
+.show {
+    width: 500px;
+    height: 400px;
+    margin-left: 35%;
+    margin-top: 15%;
+    background-color: #ededed;
+}
+
+.show-div {
+    margin-left: 35%;
+    height: 100%;
+}
+
+.span_div {
+    top: 40%;
+    left: 40%;
+    font-size: 20px;
+    color: black;
+}
+
+.spe {
+    color: red;
+}
+
+
+
