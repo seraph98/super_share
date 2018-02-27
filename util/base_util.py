@@ -1,3 +1,8 @@
+import sys
+sys.path.append('/home/server/super_share')
+sys.path.append('/home/gavin/workspace/python/super_share')
+sys.path.append('/home/server/super_share/web')
+sys.path.append('/home/gavin/workspace/python/super_share/web')
 import re, requests
 from bs4 import BeautifulSoup
 from threading import Thread
@@ -53,13 +58,14 @@ def get_base_headers(url):
         'User-Agent': 'Mozilla / 5.0(X11;Linux x86_64) AppleWebKit / 537.36(KHTML, like Gecko) Chrome / 62.0.3202.94 Safari / 537.36',
     }
     try:
-        headers['Host'] = get_host(url)
+        # headers['Host'] = get_host(url)
+        pass
     except Exception as e:
         pass
     return headers
 
 
-def get_target_url(url, timeout=7):
+def get_target_url(url, timeout=2):
     headers = get_base_headers(url)
     result = self_get_requests(url, headers=headers, allow_redirects=False, verify=False, timeout=timeout)
     if result is None:
@@ -80,7 +86,7 @@ def get_target_url(url, timeout=7):
         if result is None:
             print('得到目标url超时:'+url)
             return None
-        if count > 4:
+        if count > 2:
             return None
         count = count + 1
     return url

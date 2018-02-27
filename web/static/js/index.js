@@ -55,7 +55,7 @@ function forsearch(ele) {
 function search_baidu_cloud() {
     begin_power();
     let query = document.getElementById('input_id').value;
-    let url = 'http://localhost:5000/baidu_cloud?query='+query;
+    let url = '/baidu_cloud?query='+query;
     let xmlhttp = new XMLHttpRequest();
     xmlhttp.onreadystatechange=function() {
         if (xmlhttp.readyState===4 && xmlhttp.status===200) {
@@ -63,6 +63,11 @@ function search_baidu_cloud() {
             let pele = document.getElementById('power_id');
             pele.setAttribute('class', 'no-power');
             self_time = 40;
+            try{
+                clearTimeout(sto);
+            }catch (e){
+
+            }
             document.getElementById('abc').innerHTML = '<span class="span_div">查询中</span><span class="span_div spe" id="sec_id"> 40 </span><span class="span_div">秒</span>';
             let result = xmlhttp.responseText;
             let json = JSON.parse(result);
@@ -107,12 +112,17 @@ function search_baidu_cloud() {
 function search_xunlei_vip() {
     self_time = 30;
     begin_power();
-    let url = 'http://localhost:5000/xunlei_vip';
+    let url = '/xunlei_vip';
     let xmlhttp = new XMLHttpRequest();
     xmlhttp.onreadystatechange=function() {
         if (xmlhttp.readyState===4 && xmlhttp.status===200) {
             //todo 处理返回值
             self_time = 40;
+            try{
+                clearTimeout(sto);
+            }catch (e){
+
+            }
             let pele = document.getElementById('power_id');
             pele.setAttribute('class', 'no-power');
             document.getElementById('abc').innerHTML = '<span class="span_div">查询中</span><span class="span_div spe" id="sec_id"> 40 </span><span class="span_div">秒</span>';
@@ -143,12 +153,17 @@ function search_xunlei_vip() {
 function search_youku_vip() {
     self_time = 30;
     begin_power();
-    let url = 'http://localhost:5000/youku_vip';
+    let url = '/youku_vip';
     let xmlhttp = new XMLHttpRequest();
     xmlhttp.onreadystatechange=function() {
         if (xmlhttp.readyState===4 && xmlhttp.status===200) {
             //todo 处理返回值
             self_time = 40;
+            try{
+                clearTimeout(sto);
+            }catch (e){
+
+            }
             let pele = document.getElementById('power_id');
             pele.setAttribute('class', 'no-power');
             document.getElementById('abc').innerHTML = '<span class="span_div">查询中</span><span class="span_div spe" id="sec_id"> 40 </span><span class="span_div">秒</span>';

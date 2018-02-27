@@ -1,4 +1,4 @@
-import time
+import requests
 from bs4 import BeautifulSoup
 import re, traceback
 from multiprocessing import Process, Queue
@@ -17,7 +17,7 @@ def test_cookie():
 # 判断百度云盘的分享链接是否有效
 def judge_effective(link):
     headers = auto_get_headers(link)
-    result = self_get_requests(link, headers=headers, allow_redirects=False, timeout=7)
+    result = self_get_requests(link, headers=headers, allow_redirects=False, timeout=10)
     if result is None:
         print('判断百度云链接是否有效超时:'+link)
         return 0
@@ -25,15 +25,23 @@ def judge_effective(link):
         # 如果是转到404页面， 就直接表明是错误的
         if result.headers.get('Location') == '/error/404.html':
             return 0
-        return judge_effective(result.headers.get('Location'))
+        # return judge_effective(result.headers.get('Location'))
+        return 0
     else:
         result.encoding = 'utf-8'
-        title = BeautifulSoup(result.text, 'lxml').title.string
+        soup = BeautifulSoup(result.text, 'lxml')
+        title = soup.title.string
         if title == '百度网盘-链接不存在' or title == '页面不存在':
             return 0
         elif title == '百度网盘 请输入提取密码':
             return 2
         else:
+            try:
+                if '扫一扫' in title or '扫码' in title or '.jpg' in title or '.png' in title or '无版权资源' in title:
+                    return 0
+                pass
+            except Exception as e:
+                pass
             return 1
 
 
@@ -42,9 +50,7 @@ def judge_effective(link):
 def page_process(url, timeout, fatherQueue):
     target_url_ls = get_url_of_host_page(url, timeout=timeout)
     size = len(target_url_ls)
-    l = int(size / 3)
     q = Queue()
-
     link = set()
     link_ps = set()
     for turl in target_url_ls:
@@ -52,7 +58,7 @@ def page_process(url, timeout, fatherQueue):
         p.start()
     for i in range(size):
         try:
-            a, b = q.get(timeout = timeout + 5)
+            a, b = q.get(timeout = timeout + 10)
         except Exception as e:
             continue
         link = a | link
@@ -131,4 +137,4 @@ def find_info(url):
 
 
 if __name__ == '__main__':
-    print(test_cookie())
+    print(judge_effective('https://pan.baidu.com/s/1bpRYZgV'))

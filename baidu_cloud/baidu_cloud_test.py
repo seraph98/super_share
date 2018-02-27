@@ -1,3 +1,8 @@
+import sys
+sys.path.append('/home/server/super_share')
+sys.path.append('/home/gavin/workspace/python/super_share')
+sys.path.append('/home/server/super_share/web')
+sys.path.append('/home/gavin/workspace/python/super_share/web')
 import requests
 import re
 from baidu_cloud.baidu_cloud_util import judge_effective, get_target_url, find_info

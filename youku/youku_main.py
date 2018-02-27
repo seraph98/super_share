@@ -1,3 +1,8 @@
+import sys
+sys.path.append('/home/server/super_share')
+sys.path.append('/home/gavin/workspace/python/super_share')
+sys.path.append('/home/server/super_share/web')
+sys.path.append('/home/gavin/workspace/python/super_share/web')
 import requests, json
 
 from util.test_util import auto_get_headers_for_vip

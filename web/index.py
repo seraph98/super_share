@@ -11,7 +11,7 @@ def index():
     return render_template('index.html')
 
 
-@app.route('/baidu_cloud', methods=['GET', 'POST'])
+@app.route('/baidu_cloud', methods=['GET', 'POST', 'OPTIONS'])
 def baidu_cloud():
     query = request.args.get('query')
     print(query)
@@ -23,7 +23,7 @@ def baidu_cloud():
     return json.dumps(obj)
 
 
-@app.route('/xunlei_vip', methods=['GET', 'POST'])
+@app.route('/xunlei_vip', methods=['GET', 'POST', 'OPTIONS'])
 def xunlei_vip():
     ls = xun_lei_main.main()
     obj = {
@@ -31,7 +31,7 @@ def xunlei_vip():
     }
     return json.dumps(obj)
 
-@app.route('/youku_vip', methods=['GET', 'POST'])
+@app.route('/youku_vip', methods=['GET', 'POST', 'OPTIONS'])
 def youku_vip():
     ls = youku_main.main()
     obj = {
@@ -50,4 +50,4 @@ def test():
 
 
 if __name__ == '__main__':
-    app.run()
+    app.run(host='0.0.0.0', port=5000)

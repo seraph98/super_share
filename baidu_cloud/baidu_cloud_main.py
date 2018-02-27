@@ -1,3 +1,8 @@
+import sys
+sys.path.append('/home/server/super_share')
+sys.path.append('/home/gavin/workspace/python/super_share')
+sys.path.append('/home/server/super_share/web')
+sys.path.append('/home/gavin/workspace/python/super_share/web')
 from baidu_cloud.baidu_cloud_util import *
 from util.util import get_host_url_list, auto_get_headers
 
@@ -30,13 +35,12 @@ def get_total_page_info(html):
 
 
 # 任务分配函数, 负责将10个页面列表url分配给10个进程处理
-def task_share(ls, timeout=7):
+def task_share(ls, timeout=10):
     queue = Queue()
     link = set()
     link_ps = set()
-    if len(ls) > 6:
-        ls = ls[0:6]
-    print('获取到了'+str(len(ls))+"个主页面链接")
+    if len(ls) > 5:
+        ls = ls[0:5]
     for url in ls:
         p = Process(target=page_process, args=(url, timeout, queue))
         p.start()
@@ -44,11 +48,6 @@ def task_share(ls, timeout=7):
         a, b = queue.get()
         link = link | a
         link_ps = link_ps | b
-    print('最终结果')
-    for l in link:
-        print(l)
-    for l in link_ps:
-        print(l)
     return link, link_ps
 
 
@@ -59,11 +58,11 @@ def task_share(ls, timeout=7):
 # 对于每个页面， 先获取所有的url地址， 然后使用3个进程平均分析页面信息
 # 返回Link 和 link_ps
 # 客户端+8秒
-def main(key_word, timeout=7):
+def main(key_word, timeout=10):
     ls = get_host_url_list(key_word+" 百度云盘分享")
     return task_share(ls, timeout=timeout) #第二个参数是当前页面的主体， 这个也是需要的
 
 
 if __name__ == '__main__':
     print('程序已启动')
-    main("雷神3")
+    main("记忆提取")

@@ -1,3 +1,8 @@
+import sys
+sys.path.append('/home/server/super_share')
+sys.path.append('/home/gavin/workspace/python/super_share')
+sys.path.append('/home/server/super_share/web')
+sys.path.append('/home/gavin/workspace/python/super_share/web')
 import requests
 from bs4 import BeautifulSoup
 
@@ -7,6 +12,7 @@ from util.base_util import deal_query, get_target_url, deal_html, get_host, get_
 
 def auto_get_headers(url, timeout=7):
     headers = get_base_headers(url)
+    # 为了提高效率， 直接返回第一次头信息
     result = self_get_requests(url, headers=headers, timeout=timeout)
     if result is None:
         print('得到头信息时超时:'+url)
@@ -26,6 +32,8 @@ def auto_get_headers(url, timeout=7):
 def get_host_url_list(key_word, timeout=7):
     base_url = 'https://www.baidu.com/s?wd='
     url = deal_query(base_url + key_word)
+    return [url, ]
+    # 优化， 仅仅获取第一个页面。 加速查询的效率
     headers = auto_get_headers(url)
     result = self_get_requests(url, headers=headers, timeout=timeout)
     if result is None:
@@ -46,26 +54,28 @@ def get_host_url_list(key_word, timeout=7):
     return ls
 
 
-def get_url_of_host_page(url, timeout=7):
+def get_url_of_host_page(url, timeout=2):
     page = get_info_page(url, timeout=timeout)
     ls = deal_html(page)
     return ls
 
 
-def get_info_page(target_url, timeout=7):
+def get_info_page(target_url, timeout=2):
     # 对于百度搜索结果中的一些链接而言， 部分链接可能无法reach， 存在的原因有多种，比如防火墙等, 所以预先做好超时处理
     # todo 测试链接是否通畅, 超时时间设置100秒
-    test_result = self_get_requests(target_url, headers = get_base_headers(target_url), timeout = timeout)
+    # test_result = self_get_requests(target_url, headers = get_base_headers(target_url), timeout = timeout)
+    test_result = requests.head(target_url, headers=get_base_headers(target_url), timeout=timeout)
     if test_result is None:
         print('超时:'+target_url)
         return ''
     # todo end
     headers = auto_get_headers(target_url)
     result = self_get_requests(target_url, headers=headers, allow_redirects=False, verify=False, timeout=timeout)
+    # result = requests.head(target_url, headers=headers, allow_redirects=False, verify=False, timeout=timeout)
     if result is None:
         print('意外超时:'+target_url)
         return ''
-    while result.status_code == 307 or result.status_code == 302:
+    if result.status_code == 307 or result.status_code == 302:
         # 预防措施, 这个while循环可以没有
         target_url = result.headers.get('Location')
         temp_header = headers
@@ -73,7 +83,8 @@ def get_info_page(target_url, timeout=7):
             temp_header['Host'] = get_host(target_url)
         except Exception as e:
             pass
-        result = self_get_requests(target_url, headers=temp_header, verify=False, timeout=timeout)
+        # result = self_get_requests(target_url, headers=temp_header, verify=False, timeout=timeout)
+        result = requests.head(target_url, headers=temp_header, verify=False, timeout=timeout)
         if result is None:
             print('意外超时:'+target_url)
             return ''
