@@ -1,0 +1,332 @@
+1519698775331	geckodriver	INFO	geckodriver 0.19.1
+1519698775335	geckodriver	INFO	Listening on 127.0.0.1:48183
+1519698776441	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.rpX93kbTjKum"
+1519698781630	Marionette	INFO	Enabled via --marionette
+1519698786964	Marionette	INFO	Listening on port 35645
+1519698787061	Marionette	WARN	TLS certificate errors will be ignored for this session
+*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
+1519699294825	geckodriver	INFO	geckodriver 0.19.1
+1519699294828	geckodriver	INFO	Listening on 127.0.0.1:43701
+1519699295901	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.mzfbhASunSdD"
+1519699296529	Marionette	INFO	Enabled via --marionette
+1519699299179	Marionette	INFO	Listening on port 40893
+1519699299215	Marionette	WARN	TLS certificate errors will be ignored for this session
+1519699299321	addons.xpi	WARN	Exception running bootstrap method shutdown on activity-stream@mozilla.org: [Exception... "Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIObserverService.removeObserver]"  nsresult: "0x80004005 (NS_ERROR_FAILURE)"  location: "JS frame :: resource://activity-stream/lib/SnippetsFeed.jsm :: uninit :: line 125"  data: no] Stack trace: uninit()@resource://activity-stream/lib/SnippetsFeed.jsm:125 < onAction()@resource://activity-stream/lib/SnippetsFeed.jsm:141 < _middleware/</<()@resource://activity-stream/lib/Store.jsm:51 < Store/this[method]()@resource://activity-stream/lib/Store.jsm:30 < uninit()@resource://activity-stream/lib/Store.jsm:153 < uninit()@resource://activity-stream/lib/ActivityStream.jsm:278 < uninit()@resource://gre/modules/addons/XPIProvider.jsm -> jar:file:///usr/lib/firefox/browser/features/activity-stream@mozilla.org.xpi!/bootstrap.js:80 < shutdown()@resource://gre/modules/addons/XPIProvider.jsm -> jar:file:///usr/lib/firefox/browser/features/activity-stream@mozilla.org.xpi!/bootstrap.js:196 < callBootstrapMethod()@resource://gre/modules/addons/XPIProvider.jsm:4406 < observe()@resource://gre/modules/addons/XPIProvider.jsm:2270
+1519699618434	geckodriver	INFO	geckodriver 0.19.1
+1519699618437	geckodriver	INFO	Listening on 127.0.0.1:39089
+1519699619511	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.QBzyPpoWXdbC"
+1519699620193	Marionette	INFO	Enabled via --marionette
+1519699622633	Marionette	INFO	Listening on port 37107
+1519699622729	Marionette	WARN	TLS certificate errors will be ignored for this session
+*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
+1519699641659	geckodriver	INFO	geckodriver 0.19.1
+1519699641662	geckodriver	INFO	Listening on 127.0.0.1:53613
+1519699642736	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.AGUoTklMU1Bb"
+1519699643459	Marionette	INFO	Enabled via --marionette
+1519699645917	Marionette	INFO	Listening on port 37667
+1519699645948	Marionette	WARN	TLS certificate errors will be ignored for this session
+*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
+1519699705370	geckodriver	INFO	geckodriver 0.19.1
+1519699705373	geckodriver	INFO	Listening on 127.0.0.1:60833
+1519699706449	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.nuRXDkupvafm"
+1519699707093	Marionette	INFO	Enabled via --marionette
+1519699709602	Marionette	INFO	Listening on port 35247
+1519699709663	Marionette	WARN	TLS certificate errors will be ignored for this session
+*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
+1519700014692	geckodriver	INFO	geckodriver 0.19.1
+1519700014695	geckodriver	INFO	Listening on 127.0.0.1:36093
+1519700015770	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.OYhq2XbNXhmU"
+1519700016455	Marionette	INFO	Enabled via --marionette
+1519700018903	Marionette	INFO	Listening on port 39583
+1519700018989	Marionette	WARN	TLS certificate errors will be ignored for this session
+1519700087393	geckodriver	INFO	geckodriver 0.19.1
+1519700087396	geckodriver	INFO	Listening on 127.0.0.1:37579
+1519700088468	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.JW4fR557ziKu"
+1519700089221	Marionette	INFO	Enabled via --marionette
+1519700091599	Marionette	INFO	Listening on port 44311
+1519700091694	Marionette	WARN	TLS certificate errors will be ignored for this session
+*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
+1519701404287	geckodriver	INFO	geckodriver 0.19.1
+1519701404290	geckodriver	INFO	Listening on 127.0.0.1:41805
+1519701405367	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.s9d49BEikbBF"
+1519701406018	Marionette	INFO	Enabled via --marionette
+1519701408437	Marionette	INFO	Listening on port 41871
+1519701408478	Marionette	WARN	TLS certificate errors will be ignored for this session
+1519701472114	geckodriver	INFO	geckodriver 0.19.1
+1519701472117	geckodriver	INFO	Listening on 127.0.0.1:42251
+1519701473191	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.XBeYX4nsbgDA"
+1519701473925	Marionette	INFO	Enabled via --marionette
+1519701476310	Marionette	INFO	Listening on port 42561
+1519701476401	Marionette	WARN	TLS certificate errors will be ignored for this session
+1519701596309	geckodriver	INFO	geckodriver 0.19.1
+1519701596312	geckodriver	INFO	Listening on 127.0.0.1:36619
+1519701597388	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.D74ygSBENgoK"
+1519701598018	Marionette	INFO	Enabled via --marionette
+1519701600373	Marionette	INFO	Listening on port 35401
+1519701600402	Marionette	WARN	TLS certificate errors will be ignored for this session
+*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
+1519701715141	geckodriver	INFO	geckodriver 0.19.1
+1519701715143	geckodriver	INFO	Listening on 127.0.0.1:35855
+1519701716220	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.kUKCyUSaRq9C"
+1519701716891	Marionette	INFO	Enabled via --marionette
+1519701719293	Marionette	INFO	Listening on port 45659
+1519701719329	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://res.wx.qq.com/mpres/zh_CN/htmledition//3rd/vue/vue3a7ad1.js, line 3: unreachable code after return statement
+*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
+1519701907270	geckodriver	INFO	geckodriver 0.19.1
+1519701907273	geckodriver	INFO	Listening on 127.0.0.1:57587
+1519701908349	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.FZE1RW7vkv0n"
+1519701908979	Marionette	INFO	Enabled via --marionette
+1519701911480	Marionette	INFO	Listening on port 39265
+1519701911559	Marionette	WARN	TLS certificate errors will be ignored for this session
+*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
+1519702052326	geckodriver	INFO	geckodriver 0.19.1
+1519702052329	geckodriver	INFO	Listening on 127.0.0.1:49603
+1519702053405	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.n8wnoag9zm1i"
+1519702054100	Marionette	INFO	Enabled via --marionette
+1519702056541	Marionette	INFO	Listening on port 42639
+1519702056623	Marionette	WARN	TLS certificate errors will be ignored for this session
+1519702106526	geckodriver	INFO	geckodriver 0.19.1
+1519702106529	geckodriver	INFO	Listening on 127.0.0.1:35205
+1519702107601	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.5BXNzOoRFnmU"
+1519702108277	Marionette	INFO	Enabled via --marionette
+1519702110698	Marionette	INFO	Listening on port 45635
+1519702110721	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://res.wx.qq.com/mpres/zh_CN/htmledition//3rd/vue/vue3a7ad1.js, line 3: unreachable code after return statement
+*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
+1519702418767	geckodriver	INFO	geckodriver 0.19.1
+1519702418770	geckodriver	INFO	Listening on 127.0.0.1:34897
+1519702419847	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.S1iBw76Mmn7u"
+1519702420460	Marionette	INFO	Enabled via --marionette
+1519702422913	Marionette	INFO	Listening on port 42395
+1519702422959	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://res.wx.qq.com/mpres/zh_CN/htmledition//3rd/vue/vue3a7ad1.js, line 3: unreachable code after return statement
+1519702853904	geckodriver	INFO	geckodriver 0.19.1
+1519702853907	geckodriver	INFO	Listening on 127.0.0.1:45611
+1519702854985	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.JMieTSRvxr2u"
+1519702855629	Marionette	INFO	Enabled via --marionette
+1519702858209	Marionette	INFO	Listening on port 44869
+1519702858304	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://res.wx.qq.com/mpres/zh_CN/htmledition//3rd/vue/vue3a7ad1.js, line 3: unreachable code after return statement
+JavaScript warning: https://res.wx.qq.com/mpres/zh_CN/htmledition//3rd/vue/vue3a7ad1.js, line 3: unreachable code after return statement
+JavaScript warning: https://res.wx.qq.com/mpres/zh_CN/htmledition//3rd/vue/vue3a7ad1.js, line 3: unreachable code after return statement
+*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
+1519705714774	geckodriver	INFO	geckodriver 0.19.1
+1519705714778	geckodriver	INFO	Listening on 127.0.0.1:53021
+1519705715854	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.gMlpGnNTafej"
+1519705716513	Marionette	INFO	Enabled via --marionette
+1519705719078	Marionette	INFO	Listening on port 42305
+1519705719164	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://res.wx.qq.com/mpres/zh_CN/htmledition//3rd/vue/vue3a7ad1.js, line 3: unreachable code after return statement
+JavaScript warning: https://res.wx.qq.com/mpres/zh_CN/htmledition//3rd/vue/vue3a7ad1.js, line 3: unreachable code after return statement
+JavaScript warning: https://res.wx.qq.com/mpres/zh_CN/htmledition//3rd/vue/vue3a7ad1.js, line 3: unreachable code after return statement
+1519706932561	geckodriver	INFO	geckodriver 0.19.1
+1519706932564	geckodriver	INFO	Listening on 127.0.0.1:53419
+1519706933639	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.XVDvl4ZEueYP"
+1519706934317	Marionette	INFO	Enabled via --marionette
+1519706936681	Marionette	INFO	Listening on port 44595
+1519706936749	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://res.wx.qq.com/mpres/zh_CN/htmledition//3rd/vue/vue3a7ad1.js, line 3: unreachable code after return statement
+JavaScript warning: https://res.wx.qq.com/mpres/zh_CN/htmledition//3rd/vue/vue3a7ad1.js, line 3: unreachable code after return statement
+1519708499700	geckodriver	INFO	geckodriver 0.19.1
+1519708499704	geckodriver	INFO	Listening on 127.0.0.1:35597
+1519708500784	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.ma6Wj9Z6VpnN"
+1519708501576	Marionette	INFO	Enabled via --marionette
+1519708503945	Marionette	INFO	Listening on port 44631
+1519708504000	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://res.wx.qq.com/mpres/zh_CN/htmledition//3rd/vue/vue3a7ad1.js, line 3: unreachable code after return statement
+JavaScript warning: https://res.wx.qq.com/mpres/zh_CN/htmledition//3rd/vue/vue3a7ad1.js, line 3: unreachable code after return statement
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+1519708836175	geckodriver	INFO	geckodriver 0.19.1
+1519708836177	geckodriver	INFO	Listening on 127.0.0.1:40695
+1519708837253	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.xFMdsd5SPpGx"
+1519708837951	Marionette	INFO	Enabled via --marionette
+1519708840279	Marionette	INFO	Listening on port 38603
+1519708840374	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://res.wx.qq.com/mpres/zh_CN/htmledition//3rd/vue/vue3a7ad1.js, line 3: unreachable code after return statement
+JavaScript warning: https://res.wx.qq.com/mpres/zh_CN/htmledition//3rd/vue/vue3a7ad1.js, line 3: unreachable code after return statement
+JavaScript warning: https://res.wx.qq.com/mpres/zh_CN/htmledition//3rd/vue/vue3a7ad1.js, line 3: unreachable code after return statement
+Handler function NetworkEventActorProxy.addSecurityInfo threw an exception: [Exception... "Component returned failure code: 0xc1f30001 (NS_ERROR_NOT_INITIALIZED) [nsIMessageSender.sendAsyncMessage]"  nsresult: "0xc1f30001 (NS_ERROR_NOT_INITIALIZED)"  location: "JS frame :: resource://devtools/shared/base-loader.js -> resource://devtools/shared/webconsole/network-monitor.js :: NetworkEventActorProxy.methodFactory/< :: line 1859"  data: no]
+Stack: NetworkEventActorProxy.methodFactory/<@resource://devtools/shared/base-loader.js -> resource://devtools/shared/webconsole/network-monitor.js:1859:5
+exports.makeInfallible/<@resource://devtools/shared/base-loader.js -> resource://devtools/shared/ThreadSafeDevToolsUtils.js:109:14
+NetworkResponseListener.prototype._getSecurityInfo<@resource://devtools/shared/base-loader.js -> resource://devtools/shared/webconsole/network-monitor.js:516:5
+exports.makeInfallible/<@resource://devtools/shared/base-loader.js -> resource://devtools/shared/ThreadSafeDevToolsUtils.js:109:14
+onStartRequest@resource://devtools/shared/base-loader.js -> resource://devtools/shared/webconsole/network-monitor.js:436:5
+Line: 1859, column: 0
+console.error: 
+  Handler function NetworkEventActorProxy.addSecurityInfo threw an exception: [Exception... "Component returned failure code: 0xc1f30001 (NS_ERROR_NOT_INITIALIZED) [nsIMessageSender.sendAsyncMessage]"  nsresult: "0xc1f30001 (NS_ERROR_NOT_INITIALIZED)"  location: "JS frame :: resource://devtools/shared/base-loader.js -> resource://devtools/shared/webconsole/network-monitor.js :: NetworkEventActorProxy.methodFactory/< :: line 1859"  data: no]
+Stack: NetworkEventActorProxy.methodFactory/<@resource://devtools/shared/base-loader.js -> resource://devtools/shared/webconsole/network-monitor.js:1859:5
+exports.makeInfallible/<@resource://devtools/shared/base-loader.js -> resource://devtools/shared/ThreadSafeDevToolsUtils.js:109:14
+NetworkResponseListener.prototype._getSecurityInfo<@resource://devtools/shared/base-loader.js -> resource://devtools/shared/webconsole/network-monitor.js:516:5
+exports.makeInfallible/<@resource://devtools/shared/base-loader.js -> resource://devtools/shared/ThreadSafeDevToolsUtils.js:109:14
+onStartRequest@resource://devtools/shared/base-loader.js -> resource://devtools/shared/webconsole/network-monitor.js:436:5
+Line: 1859, column: 0
+Handler function NetworkEventActorProxy.addResponseContent threw an exception: [Exception... "Component returned failure code: 0xc1f30001 (NS_ERROR_NOT_INITIALIZED) [nsIMessageSender.sendAsyncMessage]"  nsresult: "0xc1f30001 (NS_ERROR_NOT_INITIALIZED)"  location: "JS frame :: resource://devtools/shared/base-loader.js -> resource://devtools/shared/webconsole/network-monitor.js :: NetworkEventActorProxy.methodFactory/< :: line 1859"  data: no]
+Stack: NetworkEventActorProxy.methodFactory/<@resource://devtools/shared/base-loader.js -> resource://devtools/shared/webconsole/network-monitor.js:1859:5
+exports.makeInfallible/<@resource://devtools/shared/base-loader.js -> resource://devtools/shared/ThreadSafeDevToolsUtils.js:109:14
+_onComplete@resource://devtools/shared/base-loader.js -> resource://devtools/shared/webconsole/network-monitor.js:641:5
+onStreamClose@resource://devtools/shared/base-loader.js -> resource://devtools/shared/webconsole/network-monitor.js:590:7
+onInputStreamReady@resource://devtools/shared/base-loader.js -> resource://devtools/shared/webconsole/network-monitor.js:689:7
+Line: 1859, column: 0
+console.error: 
+  Handler function NetworkEventActorProxy.addResponseContent threw an exception: [Exception... "Component returned failure code: 0xc1f30001 (NS_ERROR_NOT_INITIALIZED) [nsIMessageSender.sendAsyncMessage]"  nsresult: "0xc1f30001 (NS_ERROR_NOT_INITIALIZED)"  location: "JS frame :: resource://devtools/shared/base-loader.js -> resource://devtools/shared/webconsole/network-monitor.js :: NetworkEventActorProxy.methodFactory/< :: line 1859"  data: no]
+Stack: NetworkEventActorProxy.methodFactory/<@resource://devtools/shared/base-loader.js -> resource://devtools/shared/webconsole/network-monitor.js:1859:5
+exports.makeInfallible/<@resource://devtools/shared/base-loader.js -> resource://devtools/shared/ThreadSafeDevToolsUtils.js:109:14
+_onComplete@resource://devtools/shared/base-loader.js -> resource://devtools/shared/webconsole/network-monitor.js:641:5
+onStreamClose@resource://devtools/shared/base-loader.js -> resource://devtools/shared/webconsole/network-monitor.js:590:7
+onInputStreamReady@resource://devtools/shared/base-loader.js -> resource://devtools/shared/webconsole/network-monitor.js:689:7
+Line: 1859, column: 0
+1519708936749	geckodriver	INFO	geckodriver 0.19.1
+1519708936752	geckodriver	INFO	Listening on 127.0.0.1:34041
+1519708937828	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.hyAJIHFLt3GC"
+1519708938538	Marionette	INFO	Enabled via --marionette
+1519708940914	Marionette	INFO	Listening on port 42159
+1519708940948	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://res.wx.qq.com/mpres/zh_CN/htmledition//3rd/vue/vue3a7ad1.js, line 3: unreachable code after return statement
+JavaScript warning: https://res.wx.qq.com/mpres/zh_CN/htmledition//3rd/vue/vue3a7ad1.js, line 3: unreachable code after return statement
+JavaScript warning: https://res.wx.qq.com/mpres/zh_CN/htmledition//3rd/vue/vue3a7ad1.js, line 3: unreachable code after return statement
+JavaScript warning: https://res.wx.qq.com/mpres/zh_CN/htmledition//3rd/vue/vue3a7ad1.js, line 3: unreachable code after return statement
+JavaScript warning: https://res.wx.qq.com/mpres/zh_CN/htmledition//3rd/vue/vue3a7ad1.js, line 3: unreachable code after return statement
+JavaScript warning: https://res.wx.qq.com/mpres/zh_CN/htmledition//3rd/vue/vue3a7ad1.js, line 3: unreachable code after return statement
+JavaScript warning: https://res.wx.qq.com/mpres/zh_CN/htmledition//3rd/vue/vue3a7ad1.js, line 3: unreachable code after return statement
+JavaScript warning: https://res.wx.qq.com/mpres/zh_CN/htmledition//3rd/vue/vue3a7ad1.js, line 3: unreachable code after return statement
+JavaScript warning: https://res.wx.qq.com/mpres/zh_CN/htmledition//3rd/vue/vue3a7ad1.js, line 3: unreachable code after return statement
+JavaScript warning: https://res.wx.qq.com/mpres/zh_CN/htmledition//3rd/vue/vue3a7ad1.js, line 3: unreachable code after return statement
+JavaScript warning: https://res.wx.qq.com/mpres/zh_CN/htmledition//3rd/vue/vue3a7ad1.js, line 3: unreachable code after return statement
+JavaScript warning: https://res.wx.qq.com/mpres/zh_CN/htmledition//3rd/vue/vue3a7ad1.js, line 3: unreachable code after return statement
+JavaScript warning: https://res.wx.qq.com/mpres/zh_CN/htmledition//3rd/vue/vue3a7ad1.js, line 3: unreachable code after return statement
+JavaScript warning: https://res.wx.qq.com/mpres/zh_CN/htmledition//3rd/vue/vue3a7ad1.js, line 3: unreachable code after return statement
+JavaScript warning: https://res.wx.qq.com/mpres/zh_CN/htmledition//3rd/vue/vue3a7ad1.js, line 3: unreachable code after return statement
+JavaScript warning: https://res.wx.qq.com/mpres/zh_CN/htmledition//3rd/vue/vue3a7ad1.js, line 3: unreachable code after return statement
+JavaScript warning: https://res.wx.qq.com/mpres/zh_CN/htmledition//3rd/vue/vue3a7ad1.js, line 3: unreachable code after return statement
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+1519709331205	geckodriver	INFO	geckodriver 0.19.1
+1519709331208	geckodriver	INFO	Listening on 127.0.0.1:57799
+1519709332281	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.93ZRNqQS3YOb"
+1519709332915	Marionette	INFO	Enabled via --marionette
+1519709335200	Marionette	INFO	Listening on port 37297
+1519709335290	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://res.wx.qq.com/mpres/zh_CN/htmledition//3rd/vue/vue3a7ad1.js, line 3: unreachable code after return statement
+JavaScript warning: https://res.wx.qq.com/mpres/zh_CN/htmledition//3rd/vue/vue3a7ad1.js, line 3: unreachable code after return statement
+JavaScript warning: https://res.wx.qq.com/mpres/zh_CN/htmledition//3rd/vue/vue3a7ad1.js, line 3: unreachable code after return statement
+JavaScript warning: https://res.wx.qq.com/mpres/zh_CN/htmledition//3rd/vue/vue3a7ad1.js, line 3: unreachable code after return statement
+JavaScript warning: https://res.wx.qq.com/mpres/zh_CN/htmledition//3rd/vue/vue3a7ad1.js, line 3: unreachable code after return statement
+JavaScript warning: https://res.wx.qq.com/mpres/zh_CN/htmledition//3rd/vue/vue3a7ad1.js, line 3: unreachable code after return statement
+JavaScript warning: https://res.wx.qq.com/mpres/zh_CN/htmledition//3rd/vue/vue3a7ad1.js, line 3: unreachable code after return statement
+JavaScript warning: https://res.wx.qq.com/mpres/zh_CN/htmledition//3rd/vue/vue3a7ad1.js, line 3: unreachable code after return statement
+JavaScript warning: https://res.wx.qq.com/mpres/zh_CN/htmledition//3rd/vue/vue3a7ad1.js, line 3: unreachable code after return statement
+JavaScript warning: https://res.wx.qq.com/mpres/zh_CN/htmledition//3rd/vue/vue3a7ad1.js, line 3: unreachable code after return statement
+JavaScript warning: https://res.wx.qq.com/mpres/zh_CN/htmledition//3rd/vue/vue3a7ad1.js, line 3: unreachable code after return statement
+JavaScript warning: https://res.wx.qq.com/mpres/zh_CN/htmledition//3rd/vue/vue3a7ad1.js, line 3: unreachable code after return statement
+JavaScript warning: https://res.wx.qq.com/mpres/zh_CN/htmledition//3rd/vue/vue3a7ad1.js, line 3: unreachable code after return statement
+JavaScript warning: https://res.wx.qq.com/mpres/zh_CN/htmledition//3rd/vue/vue3a7ad1.js, line 3: unreachable code after return statement
+JavaScript warning: https://res.wx.qq.com/mpres/zh_CN/htmledition//3rd/vue/vue3a7ad1.js, line 3: unreachable code after return statement
+JavaScript warning: https://res.wx.qq.com/mpres/zh_CN/htmledition//3rd/vue/vue3a7ad1.js, line 3: unreachable code after return statement
+JavaScript warning: https://res.wx.qq.com/mpres/zh_CN/htmledition//3rd/vue/vue3a7ad1.js, line 3: unreachable code after return statement
+JavaScript warning: https://res.wx.qq.com/mpres/zh_CN/htmledition//3rd/vue/vue3a7ad1.js, line 3: unreachable code after return statement
+JavaScript warning: https://res.wx.qq.com/mpres/zh_CN/htmledition//3rd/vue/vue3a7ad1.js, line 3: unreachable code after return statement
+JavaScript warning: https://res.wx.qq.com/mpres/zh_CN/htmledition//3rd/vue/vue3a7ad1.js, line 3: unreachable code after return statement
+JavaScript warning: https://res.wx.qq.com/mpres/zh_CN/htmledition//3rd/vue/vue3a7ad1.js, line 3: unreachable code after return statement
+JavaScript warning: https://res.wx.qq.com/mpres/zh_CN/htmledition//3rd/vue/vue3a7ad1.js, line 3: unreachable code after return statement
+JavaScript warning: https://res.wx.qq.com/mpres/zh_CN/htmledition//3rd/vue/vue3a7ad1.js, line 3: unreachable code after return statement
+JavaScript warning: https://res.wx.qq.com/mpres/zh_CN/htmledition//3rd/vue/vue3a7ad1.js, line 3: unreachable code after return statement
+JavaScript warning: https://res.wx.qq.com/mpres/zh_CN/htmledition//3rd/vue/vue3a7ad1.js, line 3: unreachable code after return statement
+JavaScript warning: https://res.wx.qq.com/mpres/zh_CN/htmledition//3rd/vue/vue3a7ad1.js, line 3: unreachable code after return statement
+JavaScript warning: https://res.wx.qq.com/mpres/zh_CN/htmledition//3rd/vue/vue3a7ad1.js, line 3: unreachable code after return statement
+JavaScript warning: https://res.wx.qq.com/mpres/zh_CN/htmledition//3rd/vue/vue3a7ad1.js, line 3: unreachable code after return statement
+JavaScript warning: https://res.wx.qq.com/mpres/zh_CN/htmledition//3rd/vue/vue3a7ad1.js, line 3: unreachable code after return statement
+1519714743383	geckodriver	INFO	geckodriver 0.19.1
+1519714743387	geckodriver	INFO	Listening on 127.0.0.1:60285
+1519714744462	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.9zzKviFUB2bY"
+1519714745134	Marionette	INFO	Enabled via --marionette
+1519714747546	Marionette	INFO	Listening on port 36517
+1519714747574	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://res.wx.qq.com/mpres/zh_CN/htmledition//3rd/vue/vue3a7ad1.js, line 3: unreachable code after return statement
+JavaScript warning: https://res.wx.qq.com/mpres/zh_CN/htmledition//3rd/vue/vue3a7ad1.js, line 3: unreachable code after return statement
+JavaScript warning: https://res.wx.qq.com/mpres/zh_CN/htmledition//3rd/vue/vue3a7ad1.js, line 3: unreachable code after return statement
+JavaScript warning: https://res.wx.qq.com/mpres/zh_CN/htmledition//3rd/vue/vue3a7ad1.js, line 3: unreachable code after return statement
+JavaScript warning: https://res.wx.qq.com/mpres/zh_CN/htmledition//3rd/vue/vue3a7ad1.js, line 3: unreachable code after return statement
+JavaScript warning: https://res.wx.qq.com/mpres/zh_CN/htmledition//3rd/vue/vue3a7ad1.js, line 3: unreachable code after return statement
+JavaScript warning: https://res.wx.qq.com/mpres/zh_CN/htmledition//3rd/vue/vue3a7ad1.js, line 3: unreachable code after return statement
+JavaScript warning: https://res.wx.qq.com/mpres/zh_CN/htmledition//3rd/vue/vue3a7ad1.js, line 3: unreachable code after return statement
+JavaScript warning: https://res.wx.qq.com/mpres/zh_CN/htmledition//3rd/vue/vue3a7ad1.js, line 3: unreachable code after return statement
+JavaScript warning: https://res.wx.qq.com/mpres/zh_CN/htmledition//3rd/vue/vue3a7ad1.js, line 3: unreachable code after return statement
+JavaScript warning: https://res.wx.qq.com/mpres/zh_CN/htmledition//3rd/vue/vue3a7ad1.js, line 3: unreachable code after return statement
+JavaScript warning: https://res.wx.qq.com/mpres/zh_CN/htmledition//3rd/vue/vue3a7ad1.js, line 3: unreachable code after return statement
+JavaScript warning: https://res.wx.qq.com/mpres/zh_CN/htmledition//3rd/vue/vue3a7ad1.js, line 3: unreachable code after return statement
+JavaScript warning: https://res.wx.qq.com/mpres/zh_CN/htmledition//3rd/vue/vue3a7ad1.js, line 3: unreachable code after return statement
+JavaScript warning: https://res.wx.qq.com/mpres/zh_CN/htmledition//3rd/vue/vue3a7ad1.js, line 3: unreachable code after return statement
+JavaScript warning: https://res.wx.qq.com/mpres/zh_CN/htmledition//3rd/vue/vue3a7ad1.js, line 3: unreachable code after return statement
+JavaScript warning: https://res.wx.qq.com/mpres/zh_CN/htmledition//3rd/vue/vue3a7ad1.js, line 3: unreachable code after return statement
+JavaScript warning: https://res.wx.qq.com/mpres/zh_CN/htmledition//3rd/vue/vue3a7ad1.js, line 3: unreachable code after return statement
+JavaScript warning: https://res.wx.qq.com/mpres/zh_CN/htmledition//3rd/vue/vue3a7ad1.js, line 3: unreachable code after return statement
+JavaScript warning: https://res.wx.qq.com/mpres/zh_CN/htmledition//3rd/vue/vue3a7ad1.js, line 3: unreachable code after return statement
+JavaScript warning: https://res.wx.qq.com/mpres/zh_CN/htmledition//3rd/vue/vue3a7ad1.js, line 3: unreachable code after return statement
+JavaScript warning: https://res.wx.qq.com/mpres/zh_CN/htmledition//3rd/vue/vue3a7ad1.js, line 3: unreachable code after return statement
+JavaScript warning: https://res.wx.qq.com/mpres/zh_CN/htmledition//3rd/vue/vue3a7ad1.js, line 3: unreachable code after return statement
+JavaScript warning: https://res.wx.qq.com/mpres/zh_CN/htmledition//3rd/vue/vue3a7ad1.js, line 3: unreachable code after return statement
+JavaScript warning: https://res.wx.qq.com/mpres/zh_CN/htmledition//3rd/vue/vue3a7ad1.js, line 3: unreachable code after return statement
+[Child 24276, Chrome_ChildThread] WARNING: pipe error (45): Connection reset by peer: file /build/firefox-9j9NY8/firefox-58.0.2+build1/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 353
+[Child 24276, Chrome_ChildThread] WARNING: pipe error (3): Connection reset by peer: file /build/firefox-9j9NY8/firefox-58.0.2+build1/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 353
